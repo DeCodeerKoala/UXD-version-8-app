@@ -1,0 +1,629 @@
+/* CSS reset, dit niet aanpassen! */
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Hieronder mag je eigen CSS code */
+body {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 12vh 10vh 10vh 60.5vh 7.5vh;
+    max-width: 100%;
+    overflow: hidden;
+    background-color: #CF4DCE;
+}
+
+#nav {
+    grid-row: 1/2;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#titleofpage {
+    grid-row: 2/3;
+    text-align: center;
+    border-top: 2px solid #ECECEC;
+    border-bottom: 2px solid #ECECEC;
+}
+
+#subtitle {
+    background-color: #F273E6;
+    grid-row: 3/4;
+    text-align: center;
+    margin-left: 40px;
+    margin-right: 40px;
+    border: 2px solid #ECECEC;
+    border-top: none;
+    z-index: 1;
+}
+
+#logo {
+    position: relative;
+    top: 2px;
+}
+
+.homepage {
+    position: relative;
+    background-color: #ECECEC;
+    margin: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 40px;
+    border: 2.5px solid black;
+    box-shadow: 0px 0px 700px 0.5px #FF8B13;
+}
+
+#homepagepicture1 {
+    position: relative;
+    margin-top: 70px;
+}
+
+#homepagepicture2 {
+    position: relative;
+    margin-top: 70px;
+}
+
+#homepagepicture3 {
+    position: relative;
+    margin-top: 70px;
+}
+
+.titles {
+    position: relative;
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: #ECECEC;
+    top: -10px;
+}
+
+.headers {
+    position: relative;
+    font-family: "Roboto", Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    color: #ECECEC;
+    font-size: 1.3rem;
+    z-index: 1;
+}
+
+#titelstap1 {
+    position: absolute;
+    font-size: 1.5rem;
+    padding-bottom: 0px;
+    top: -17.5px;
+    left: 50px;
+    color: black;
+    text-align: center;
+}
+
+#titelstap2 {
+    position: absolute;
+    font-size: 1.5rem;
+    padding-bottom: 0px;
+    top: -19px;
+    left: 54px;
+    color: #ECECEC;
+    color: black;
+}
+
+#titelstap3 {
+    position: absolute;
+    font-size: 1.35rem;
+    padding-bottom: 0px;
+    top: -12.5px;
+    left: 45.5px;
+    color: #ECECEC;
+    text-align: center;
+    color: black;
+}
+
+#backarrowstap2 {
+    position: absolute;
+    left: 15px;
+    top: 18px;
+}
+
+#backarrowstap3 {
+    position: absolute;
+    left: 15px;
+    top: 18px;
+}
+
+.button {
+    border: 2px solid black;
+    background-color: #ECECEC;
+    color: black;
+    box-shadow: 7.5px 7.5px 15px 2.5px black;
+    font-family: "Roboto", Tahoma, Verdana, sans-serif;
+}
+
+.button:hover {
+    color: #FF8B13;
+}
+
+.buttonv1 {
+    border: 2px solid black;
+    background-color: #ECECEC;
+    color: black;
+    box-shadow: 7.5px 7.5px 15px 2.5px black;
+}
+
+#buttonhomepage {
+    position: absolute;
+    font-size: 1.25rem;
+    padding-bottom: 0px;
+    top: 291px;
+    right: 25px;
+    border-radius: 40px;
+    padding: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#buttonhomepage2 {
+    position: absolute;
+    font-size: 1.25rem;
+    padding-bottom: 0px;
+    top: 291px;
+    right: 20px;
+    border-radius: 40px;
+    padding: 5px;
+}
+
+#buttonhomepage3 {
+    position: absolute;
+    font-size: 1.25rem;
+    padding-bottom: 0px;
+    top: 291px;
+    right: 20px;
+    border-radius: 40px;
+    padding: 5px;
+}
+
+#button1van3 {
+    position: absolute;
+    font-size: 1.6rem;
+    padding-bottom: 0px;
+    top: -35px;
+    left: 36px;
+    padding-left: 20px;
+    padding-right: 20px;
+    z-index: 1;
+    box-shadow: none;
+}
+
+#button2van3 {
+    opacity: 0.70;
+    position: absolute;
+    font-size: 1.6rem;
+    padding-bottom: 0px;
+    top: -35px;
+    left: 117.5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    z-index: 1;
+    box-shadow: none;
+}
+
+#button3van3 {
+    opacity: 0.70;
+    position: absolute;
+    font-size: 1.6rem;
+    padding-bottom: 0px;
+    top: -35px;
+    right: 37px;
+    padding-left: 20px;
+    padding-right: 16.5px;
+    z-index: 1;
+    box-shadow: none;
+}
+
+.activebutton {
+    background-color: #F00;
+}
+
+#camerabutton {
+    position: absolute;
+    font-size: 1.25rem;
+    border-radius: 40px;
+    left: 15px;
+    top: 291px;
+}
+
+h1 {
+    top: -5px;
+    z-index: 1;
+}
+
+#h2 {
+    top: -7.5px;
+    z-index: 1;
+    color: #ECECEC;
+}
+
+#h3 {
+    color: black;
+    font-size: 1.5rem;
+}
+
+#h4 {
+    top: -14px;
+    z-index: 1;
+    font-size: 1.25rem;
+}
+
+#h5 {
+    top: -12.5px;
+    z-index: 1;
+    font-size: 1.5rem;
+}
+
+#checkicon {
+    color: #43A047;
+}
+
+#toggle {
+    display: none;
+}
+
+.articlepage {
+    background-color: #ECECEC;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 20px;
+    margin-bottom: 35px;
+    border: 2px solid black;
+    border-radius: 25px;
+    box-shadow: 0px 0px 700px 0.5px #FF8B13;
+    overflow-y: auto;
+}
+
+.articletext {
+    margin-top: -16px;
+}
+
+.articlesubtext {
+    text-align: center;
+    margin-top: -25px;
+    margin-left: 15px;
+    margin-right: 15px;
+    font-family: "Arial",
+        Tahoma,
+        Verdana,
+        sans-serif;
+}
+
+#backarrowarticle1 {
+    position: absolute;
+    left: 50px;
+    top: 278.5px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 5;
+    /* Sit on top */
+    padding-top: 295px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+
+
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #ECECEC;
+    margin: auto;
+    padding: 10px;
+    border: 2px solid black;
+    width: 80%;
+    border-radius: 25px;
+    box-shadow: 0px 0px 20px 2.5px #FF8B13;
+}
+
+#popuptext1 {
+    margin-top: 20px;
+    font-size: 1.5rem;
+}
+
+#subpopuptext1 {
+    margin-top: 12.5px;
+    font-size: 1rem;
+}
+
+#popuptext2 {
+    margin-top: 20px;
+    font-size: 1.5rem;
+}
+
+#subpopuptext2 {
+    margin-top: 12.5px;
+    font-size: 1rem;
+}
+
+#popuptext3 {
+    margin-top: 20px;
+    font-size: 1.5rem;
+}
+
+#subpopuptext3 {
+    margin-top: 12.5px;
+    font-size: 1rem;
+}
+
+#buttonstap1naar2 {
+    font-size: 1.2rem;
+    box-shadow: 7.5px 7.5px 15px 2.5px black;
+    padding-right: 27px;
+    padding-left: 10px;
+    border-radius: 40px;
+    align-items: center;
+    text-align: center;
+}
+
+#buttonstap1naar2:hover {
+    background-color: #ECECEC;
+    color: #FF8B13;
+}
+
+#frontarrowstep1 {
+    position: absolute;
+    right: 114px;
+    top: 421px;
+    transform: rotate(180deg);
+}
+
+#frontarrowstep3 {
+    position: absolute;
+    right: 102px;
+    top: 482px;
+    transform: rotate(180deg);
+}
+
+#buttonstap3 {
+    font-size: 1.4rem;
+    box-shadow: 7.5px 7.5px 15px 2.5px black;
+    padding-right: 10px;
+    padding-left: 6px;
+    border-radius: 40px;
+    align-items: center;
+    text-align: center;
+}
+
+#buttonstap3:hover {
+    background-color: #ECECEC;
+    color: #FF8B13;
+}
+
+.popuptext {
+    text-align: center;
+    font-family: Arial,
+        Helvetica,
+        sans-serif;
+}
+
+/* The Close Button */
+.close {
+    color: grey;
+    float: right;
+    position: absolute;
+    top: 298.5px;
+    right: 51.5px;
+    font-size: 45px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/**
+  Hamburger
+**/
+.hamburger {
+    position: absolute;
+    top: 3.5em;
+    right: 5%;
+    margin-left: -2em;
+    margin-right: 1.5em;
+    margin-top: -37.5px;
+    width: 2em;
+    height: 45px;
+    z-index: 5;
+}
+
+.hamburger div {
+    position: relative;
+    width: 3em;
+    height: 7px;
+    border-radius: 3px;
+    background-color: #ECECEC;
+    margin-top: 8px;
+    transition: all 0.3s ease-in-out;
+}
+
+/**
+Nav Styles
+**/
+.nav {
+    position: fixed;
+    max-width: 100%;
+    height: 100%;
+    background-color: #CF4DCE;
+    top: -100%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    transform: scale(0);
+    z-index: 2;
+    color: black;
+}
+
+.nav-wrapper {
+    position: relative;
+    overflow: hidden;
+    overflow-y: auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 0px;
+}
+
+#stap1van3hamburgermenu {
+    margin-bottom: 30px;
+}
+
+#stap2van3hamburgermenu {
+    margin-bottom: 30px;
+}
+
+#stap3van3hamburgermenu {
+    margin-top: 30px;
+}
+
+.hamburgermenutext {
+    line-height: 10px;
+    text-align: center;
+}
+
+#titelhamburgermenu {
+    color: black;
+    font-size: 2.25rem;
+    font-family: "Poppins",
+        Tahoma,
+        Verdana,
+        sans-serif;
+    line-height: 32.6px;
+}
+
+#subtexthamburgermenu {
+    color: black;
+    font-size: 1.35rem;
+    font-family: "Roboto",
+        Tahoma,
+        Verdana,
+        sans-serif;
+    line-height: 25px;
+}
+
+#buttonhamburgermenu {
+    padding: 10px;
+    border-radius: 30px;
+}
+
+#buttonhamburgermenu:hover {
+    color: #FF8B13;
+}
+
+nav {
+    background-color: #ECECEC;
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding: 30px;
+    line-height: 100px;
+    border-radius: 20px;
+    border: 2px solid black;
+    box-shadow: 0px 0px 700px 7.5px #FF8B13;
+}
+
+nav a {
+    position: relative;
+    text-decoration: none;
+    color: #ECECEC;
+    font-size: 3.5em;
+    display: inline-block;
+    padding: 5px;
+    margin-top: 5px;
+    transition: color 0.2s ease-in-out;
+    letter-spacing: 1px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+nav a:before {
+    content: '';
+    height: 0;
+    position: absolute;
+    width: 0.25em;
+    background-color: #FF8B13;
+    left: -0.5em;
+    transition: all 0.2s ease-in-out;
+}
+
+nav a:hover {
+    color: black;
+}
+
+nav a:hover:before {
+    height: 100%;
+}
+
+/**
+Animations
+**/
+#toggle:checked+.hamburger .top-bun {
+    transform: rotate(-45deg);
+    margin-top: 25px;
+}
+
+#toggle:checked+.hamburger .bottom-bun {
+    opacity: 0;
+    transform: rotate(45deg);
+}
+
+#toggle:checked+.hamburger .meat {
+    transform: rotate(45deg);
+    margin-top: -7px;
+}
+
+#toggle:checked+.hamburger+.nav {
+    top: 0;
+    transform: scale(1);
+}

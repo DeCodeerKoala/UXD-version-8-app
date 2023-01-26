@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+</head>
+
+<body>
+
+    <input id="toggle" type="checkbox"></input>
+
+    <label for="toggle" class="hamburger">
+        <div class="top-bun"></div>
+        <div class="meat"></div>
+        <div class="bottom-bun"></div>
+    </label>
+
+    <div class="nav">
+        <div class="nav-wrapper">
+            <nav>
+                <div id="stap1van3hamburgermenu">
+                    <a href="index.html" class="hamburgermenutext" id="titelhamburgermenu"> Stap 1/3</a>
+                    <a href="stap1van3.html" class="hamburgermenutext" id="subtexthamburgermenu">
+                        <h7 class="button" id="buttonhamburgermenu">Waarom zou ik er
+                            voor mezelf goed uit willen zien? </h7>
+                    </a>
+                </div>
+
+                <div id="stap2van3hamburgermenu">
+                    <a href="#" class="hamburgermenutext" id="titelhamburgermenu" style="opacity: 0.60;"> Stap 2/3</a>
+                    <a href="#" class="hamburgermenutext" id="subtexthamburgermenu">
+                        <h7 class="button" id="buttonhamburgermenu" style="opacity: 0.60;">Waarom zou ik voor mezelf
+                            verzorgd willen zijn?
+                        </h7>
+                    </a>
+                </div>
+
+                <div id="stap3van3hamburgermenu">
+                    <a href="#" class="hamburgermenutext" id="titelhamburgermenu" style="opacity: 0.60;"> Stap 3/3</a>
+                    <a href="#" class="hamburgermenutext" id="subtexthamburgermenu">
+                        <h7 class="button" id="buttonhamburgermenu" style="opacity: 0.60;">Waarom kalm blijven? </h7>
+                    </a>
+                </div>
+            </nav>
+
+        </div>
+    </div>
+
+    <div id="nav">
+        <img src="img/gear.png" alt="#" width="66" height="67.85">
+    </div>
+
+    <div id="titleofpage">
+        <h1 class="titles">Beweeg vooruit</h1>
+    </div>
+
+    <div id="subtitle">
+        <h2 class="headers" id="h2">Pak de hondenriem! <br> Maar eerst deze 3 stappen</h2>
+    </div>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+
+            <div class="popuptext" id="popuptext1"><strong>Stap 1 volbracht!</strong>
+                <p class="popuptext" id="subpopuptext1">Mooi! Je ziet er goed uit, ga zo door.</p>
+                <a href="homepagestap2.html"><button class="popuptext" class="button" id="buttonstap1naar2"
+                        style="width: 160px; height: 60px;">Naar stap 2!
+                    </button></a>
+                <img id="frontarrowstep1" src="img/backarrow.png" alt="" width="12" height="21">
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="homepage">
+        <button class="buttonv1" id="button1van3">1/3 </button>
+        <button class="buttonv1" id="button2van3">2/3 </button>
+        <button class="buttonv1" id="button3van3">3/3 </button>
+        <h3 class="headers" id="titelstap1"> Zie ik er voor mezelf <br>
+            goed uit?</h3>
+        <div id="homepagepicture1"></div>
+        <img src="img/maninmirror.jpg" alt="">
+
+        <a style="text-decoration: none;" href="#"><button class="button" id="buttonhomepage"> check
+                <span id="checkicon">&#10004;</span></button></a>
+
+        <button class="button" id="camerabutton" style="display:block;width:140px; height: 40px;"
+            onclick="document.getElementById('getFile').click()">open camera</button>
+        <input type='file' name="image" accept="image/*" capture="camera" id="getFile" style="display:none">
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
